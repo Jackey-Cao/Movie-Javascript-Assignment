@@ -2,7 +2,7 @@ let response = axios.get("https://api.themoviedb.org/3/search/movie", {
   params: {
     api_key: "e8016904e176c4cc2f25acfd19077f5c",
     include_adult: "false",
-    query: "batman",
+    query: "harry potter",
   }
 });
 
@@ -10,7 +10,7 @@ response = response.then((moviesData) => {
   for (let movie of moviesData.data.results) {   
     axios.get(`https://api.themoviedb.org/3/movie/${movie.id}`, {
       params: {
-        api_key: "e8016904e176c4cc2f25acfd19077f5c",
+        api_key: "e8016904e176c4cc2f25acfd19077f5c", 
         append_to_response: "videos",
       }
     }).then((movieData) => {
