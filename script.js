@@ -1,3 +1,5 @@
+document.getElementById("select").addEventListener("click", onclick);
+
 let response = axios.get("https://api.themoviedb.org/3/search/movie", {
   params: {
     api_key: "e8016904e176c4cc2f25acfd19077f5c",
