@@ -9,7 +9,7 @@ button.addEventListener('click', async () => {
     params: {
       api_key: "e8016904e176c4cc2f25acfd19077f5c",
       include_adult: "false",
-      query: selectedValue,
+      query: getFunction(),
     }
   });
   response = response.then((moviesData) => {
