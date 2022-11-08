@@ -1,19 +1,83 @@
-img {
-    width: 200px;
-    height: 300px;
-  }
-  
-  p {
-    color: blue;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  iframe {
-    height: 300px;
-    aspect-ratio: 16 / 9;
-  }
-  
-  body {
-    background-color: rgb(121, 202, 132);
-  }
+h1 {
+  padding-left: 42vw;
+  color: rgb(49, 152, 152);
+  font-weight: bold;
+  font-size: 60px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#label {
+  color: rgb(0, 0, 0);
+  padding-left: 35vw;
+  font-weight: bold;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+#movies {
+  color: rgb(0, 0, 0);
+  background-color: rgb(49, 152, 152);
+  border-color: rgba(71, 70, 70, 0.76);
+  font-weight: bold;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+#button {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(49, 152, 152);
+  border-color: black;
+  border-width: 2px;
+  margin-left: 48vw;
+  cursor: pointer;
+}
+
+#info {
+  color: white;
+  font-weight: bold;
+  font-family: Verdana, Tahoma, sans-serif;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+
+#vote {
+  padding-left: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+#overviewLabel {
+  padding-left: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+#overviewText {
+  padding-left: 20px;
+  font-size: 20px;
+  color: white;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#cover {
+  padding-left: 20px;
+  width: 300px;
+  height: 410px;
+  border: 5px;
+}
+
+#video {
+  height: 400px;
+  aspect-ratio: 10 / 6;
+  border-width: 5px;
+  border-color: rgba(71, 70, 70, 0.76);
+}
+
+body {
+  background-color: rgba(24, 23, 68, 0.856);
+}
