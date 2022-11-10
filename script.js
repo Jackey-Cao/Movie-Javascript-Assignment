@@ -25,8 +25,8 @@ button.addEventListener('click', async () => {
 
         let option = movieData.data
 
-        const display = document.getElementById('display');
-        display.removeAttribute('hidden')
+        const screen = document.getElementById('screen');
+        screen.removeAttribute('hidden')
         
         const trailers = option.videos.results.filter((trailer) => trailer.type === "Trailer");
         video.src = `https://www.youtube.com/embed/${trailers.at(0).key}`
@@ -36,18 +36,27 @@ button.addEventListener('click', async () => {
         option.genres.forEach(element => {
           genres += element.name + " "
         });
-
-        info.innerHTML = `Title: ${option.title} <br><br> 
-        Genre: ${genres} <br><br> 
-        Language: ${option.original_language} <br>
-        Runtime (Minutes): ${option.runtime} <br>
-        Release Date: ${option.release_date} <br> 
-        Popularity: ${option.popularity} <br> 
-        Revenue: $${option.revenue} <br> 
-        Vote Average: ${option.vote_average} <br> 
-        Vote Count: ${option.vote_count}`;
-        overviewLabel.innerHTML = "Preview";
-        overviewText.innerHTML = `${option.overview}`;
+        
+        title = document.getElementById("title");
+        title.innerHTML = `Title: ${option.title}`;
+        genre = document.getElementById("genre");
+        genre.innerHTML = `Genre: ${genres}`;
+        runtime = document.getElementById("runtime");
+        runtime.innerHTML = `Run Time: ${option.runtime}`;
+        language = document.getElementById("language");
+        language.innerHTML = `Language: ${option.original_language}`;
+        releasedate = document.getElementById("releasedate");
+        releasedate.innerHTML = `Released Date: ${option.release_date}`;
+        popularity = document.getElementById("popularity");
+        popularity.innerHTML = `Popularity: ${option.popularity}`;
+        revenue = document.getElementById("revenue");
+        revenue.innerHTML = `Revenue: ${option.revenue}`;
+        avevote = document.getElementById("avevote");
+        avevote.innerHTML = `Average Vote: ${option.vote_average}`;
+        votecount = document.getElementById("votecount");
+        votecount.innerHTML = `Vote Count: ${option.vote_count}`;
+        overview = document.getElementById("overview");
+        overview.innerHTML = `${option.overview}`;
       });
     }
   });
