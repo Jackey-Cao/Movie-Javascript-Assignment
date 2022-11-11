@@ -73,6 +73,7 @@ h1 {
 
 #video {
   height: 400px;
+  margin-left: 40vw;
   aspect-ratio: 10 / 6;
   border-width: 5px;
   border-color: rgba(71, 70, 70, 0.76);
@@ -80,4 +81,8 @@ h1 {
 
 body {
   background-color: rgba(24, 23, 68, 0.856);
+}
+
+.vote {
+  color: black;
 }
