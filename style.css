@@ -34,35 +34,10 @@ h1 {
   cursor: pointer;
 }
 
-#info {
-  color: white;
-  font-weight: bold;
-  font-family: Verdana, Tahoma, sans-serif;
-  text-transform: capitalize;
-  font-size: 20px;
+#title {
+
 }
 
-
-#vote {
-  padding-left: 20px;
-  color: white;
-  font-weight: bold;
-  font-family: Verdana, Tahoma, sans-serif;
-}
-
-#overviewLabel {
-  padding-left: 20px;
-  color: white;
-  font-weight: bold;
-  font-family: Verdana, Tahoma, sans-serif;
-}
-
-#overviewText {
-  padding-left: 20px;
-  font-size: 20px;
-  color: white;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-}
 
 #cover {
   padding-left: 20px;
