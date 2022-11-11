@@ -27,10 +27,6 @@ button.addEventListener('click', async () => {
 
         const screen = document.getElementById('screen');
         screen.removeAttribute('hidden')
-        
-        const trailers = option.videos.results.filter((trailer) => trailer.type === "Trailer");
-        video.src = `https://www.youtube.com/embed/${trailers.at(0).key}`
-        cover.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
 
         let genres = "";
         option.genres.forEach(element => {
@@ -38,11 +34,11 @@ button.addEventListener('click', async () => {
         });
         
         title = document.getElementById("title");
-        title.innerHTML = `Title: ${option.title}`;
+        title.innerHTML = `${option.title}`;
         genre = document.getElementById("genre");
         genre.innerHTML = `Genre: ${genres}`;
         runtime = document.getElementById("runtime");
-        runtime.innerHTML = `Run Time: ${option.runtime}`;
+        runtime.innerHTML = `Run Time (Mins): ${option.runtime}`;
         language = document.getElementById("language");
         language.innerHTML = `Language: ${option.original_language}`;
         releasedate = document.getElementById("releasedate");
@@ -50,13 +46,17 @@ button.addEventListener('click', async () => {
         popularity = document.getElementById("popularity");
         popularity.innerHTML = `Popularity: ${option.popularity}`;
         revenue = document.getElementById("revenue");
-        revenue.innerHTML = `Revenue: ${option.revenue}`;
-        avevote = document.getElementById("avevote");
-        avevote.innerHTML = `Average Vote: ${option.vote_average}`;
+        revenue.innerHTML = `Revenue: $${option.revenue}`;
+        avgvote = document.getElementById("avgvote");
+        avgvote.innerHTML = `Average Vote: ${option.vote_average}`;
         votecount = document.getElementById("votecount");
         votecount.innerHTML = `Vote Count: ${option.vote_count}`;
         overview = document.getElementById("overview");
         overview.innerHTML = `${option.overview}`;
+
+        const trailers = option.videos.results.filter((trailer) => trailer.type === "Trailer");
+        video.src = `https://www.youtube.com/embed/${trailers.at(0).key}`
+        cover.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
       });
     }
   });
