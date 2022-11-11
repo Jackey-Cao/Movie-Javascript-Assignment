@@ -1,4 +1,4 @@
-function selectFunction() {
+function movie_selector() {
   for (let i = 0; i < 10; i++) {
     if (document.getElementById("movies").selectedIndex == i) {
       return document.getElementById("movies").value
@@ -11,7 +11,7 @@ button.addEventListener('click', async () => {
     params: {
       api_key: "e8016904e176c4cc2f25acfd19077f5c",
       include_adult: "false",
-      query: selectFunction(),
+      query: movie_selector(),
     }
   });
   response = response.then((moviesData) => {
