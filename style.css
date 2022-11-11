@@ -1,6 +1,6 @@
 #label {
   color: white;
-  padding-left: 30.5vw;
+  padding-left: 21vw;
   font-weight: bold;
   font-family: Verdana, Tahoma, sans-serif;
   font-size: 20px;
@@ -23,7 +23,7 @@
   border-color: black;
   font-weight: bold;
   border-width: 2px;
-  margin-left: 47.5vw;
+  margin-left: 46.5vw;
   cursor: pointer;
 }
 
@@ -136,5 +136,5 @@
 
 body {
   background-color: rgba(49, 4, 4, 0.763);
-  height: 200vh;
+  height: 150vh;
 }
