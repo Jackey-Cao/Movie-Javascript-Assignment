@@ -28,15 +28,8 @@ button.addEventListener('click', async () => {
         const screen = document.getElementById('screen');
         screen.removeAttribute('hidden')
 
-        let genres = "";
-        option.genres.forEach(element => {
-          genres += element.name + " "
-        });
-        
         title = document.getElementById("title");
         title.innerHTML = `${option.title}`;
-        genre = document.getElementById("genre");
-        genre.innerHTML = `Genre: ${genres}`;
         runtime = document.getElementById("runtime");
         runtime.innerHTML = `Run Time (Mins): ${option.runtime}`;
         language = document.getElementById("language");
